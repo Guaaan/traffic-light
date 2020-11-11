@@ -1,0 +1,27 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+
+
+
+function App() {
+  const [clickedlight, setClickedLight] = useState("")
+  console.log(clickedlight)
+  return (
+    <div>
+      <div id="trafficTop"></div>
+      <div id="container">
+        <div className={"red light " + clickedlight } onClick={() => setClickedLight("selected")}></div>
+        <div className={"yellow light " + clickedlight } onClick={() => setClickedLight("selected")}></div>
+        <div className={"green light " + clickedlight } onClick={() => setClickedLight(" selected")}></div>
+      </div>
+    </div>
+    );
+  }
+  
+
+
+ 
+
+export default App;
